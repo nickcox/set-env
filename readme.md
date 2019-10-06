@@ -5,9 +5,13 @@ What is it?
 variables, executes a given command, then restores them to their original state. For example, given the
 alias, `env`:
 
-```sh
+```
 > env foo=bar { echo $env:foo }
 bar
+
+> echo $env:foo
+
+> _
 
 > env -u bat_theme -c { bat .\readme.md }
 # unsets existing bat_theme variable

@@ -51,7 +51,7 @@ function Set-Env {
       $var, $val = $_.trim().Split('=')
       $original = Get-Item "env:$var" -ea Ignore | select -expand Value
 
-      @{ var = $var; val = $val; original = $original }
+      @{ var = $var; val = $val -join '='; original = $original }
     }
   }
 
