@@ -1,9 +1,11 @@
 What is it?
 ===========
 
+From an idea I came across on [Twitter](https://twitter.com/lzybkr/status/1179136164885696513).
+
 (1) A command, `Set-Env`, similar to the unix `env` command which sets or unsets environment
 variables, executes a given command, then restores them to their original state. For example, given the
-alias, `env`:
+alias, `Set-Alias env Set-Env`:
 
 ```
 > env foo=bar { echo $env:foo }
