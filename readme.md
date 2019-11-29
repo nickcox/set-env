@@ -7,7 +7,8 @@ From an idea I came across on [Twitter](https://twitter.com/lzybkr/status/117913
 variables, executes a given command, then restores them to their original state. For example, given the
 alias, `Set-Alias env Set-Env`:
 
-```
+```sh
+> # Set-Alias env Set-Env
 > env foo=bar { echo $env:foo }
 bar
 
